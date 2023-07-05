@@ -1,5 +1,7 @@
 .App {
-  text-align: center;
+  width: 100%;
+  max-width: 598px;
+  margin: auto;
 }
 
 .App-logo {
@@ -14,14 +16,111 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  max-height: 52px;
+  padding: 14px;
+  border: 1px solid #2F3336;
+  color: white;
+}
+
+.Feed-title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.Perfil-img {
+  width: 48px;
+  padding: 16px;
+}
+
+.Perfil-img img {
+  width: 48px;
+  border-radius: 50%;
+}
+
+.Tweet {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #2F3336;
+  border-top: 0;
+}
+.User-interactions {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px 0;
+}
+
+.User-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.User-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.Name {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.User {
+  font-size: 15px;
+  font-weight: 300;
+  color: #6E767D;
+}
+
+.Time {
+  font-size: 15px;
+  font-weight: 300;
+  color: #6E767D;
+}
+
+.Time::before {
+  content: '•';
+  color: #6E767D;
+}
+
+.Content p,
+.Content p a {
+  color: #D9D9D9;
+  font-size: 15px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.Content img {
+  border-radius: 10%;
+  max-width: 500px;
+}
+
+.Interactions {
+  display: flex;
+  width: 505px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 48px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.Count {
+  color: #6E767E;
+  font-size: 13px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 21px;
 }
 
 .App-link {
